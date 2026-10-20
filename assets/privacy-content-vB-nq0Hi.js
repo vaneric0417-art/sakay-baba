@@ -1,0 +1,13 @@
+(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))n(t);new MutationObserver(t=>{for(const o of t)if(o.type==="childList")for(const a of o.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&n(a)}).observe(document,{childList:!0,subtree:!0});function r(t){const o={};return t.integrity&&(o.integrity=t.integrity),t.referrerPolicy&&(o.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?o.credentials="include":t.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function n(t){if(t.ep)return;t.ep=!0;const o=r(t);fetch(t.href,o)}})();const l={NAME:"Sakay-Baba!",TAGLINE:"Sakay na. Para po. Again!",TAGLINE_EN:"Pick them up. Drop them off. Don’t hit your own tail.",SHARE_TITLE:"Sakay-Baba!",SITE_URL:"https://vaneric0417-art.github.io/sakay-baba/"},i="sb:v1:";function d(s,e){try{const r=localStorage.getItem(i+s);return r==null?e:{...e,...JSON.parse(r)}}catch{return e}}function p(s,e){try{localStorage.setItem(i+s,JSON.stringify(e))}catch{}}function f(){try{const s=[];for(let e=0;e<localStorage.length;e++){const r=localStorage.key(e);r&&r.startsWith(i)&&s.push(r)}s.forEach(e=>localStorage.removeItem(e))}catch{}}const g={sound:!1,haptics:!1,motion:"auto",theme:"auto",swipe:"med",badges:!0},h={seenHowTo:!1,firstRideDone:!1,endlessBest:0},y=()=>({ridesUsed:0,best:null}),u="2026-10-19",c="vaneric0417@gmail.com";function m(){return`
+<h2>Privacy</h2>
+<p class="lede">No account, no tracking. Scores stay on this phone.</p>
+<ul class="privacy-list">
+  <li><strong>No account.</strong> You never sign up or log in.</li>
+  <li><strong>No ads inside rides.</strong></li>
+  <li><strong>No tracking or analytics in this version.</strong> The game makes no network calls after it loads, except the browser checking for an updated version of the game itself (the service worker).</li>
+  <li><strong>Scores and settings stay in this browser</strong> (localStorage, keys starting with <code>sb:v1:</code>). They never leave your device. Settings &rarr; <em>Reset my data</em> deletes them.</li>
+  <li><strong>Share text is created on your device</strong> and only goes where you send it. It contains your score and route strip, nothing personal.</li>
+  <li><strong>Game portals:</strong> if you play ${l.NAME} on a game portal (for example itch.io or CrazyGames), that portal's own privacy policy applies to their site.</li>
+</ul>
+<p>Questions? Email <a href="mailto:${c}">${c}</a>.</p>
+<p class="muted">Last updated: ${u}</p>`}export{g as D,l as I,h as a,y as e,d as l,m as p,f as r,p as s};

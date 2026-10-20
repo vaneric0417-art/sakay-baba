@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="t">
+  <title id="t">Sakay-Baba! app icon: jeepney front with route signboard</title>
+  <!-- Night tile -->
+  <rect width="64" height="64" rx="14" fill="#14172E"/>
+  <!-- Roof signboard -->
+  <rect x="14" y="7" width="36" height="10" rx="3" fill="#FFF4DC" stroke="#1A1423" stroke-width="2"/>
+  <rect x="19" y="11" width="26" height="2.5" rx="1.2" fill="#C8102E"/>
+  <!-- Body -->
+  <path d="M9 22 Q9 17 14 17 H50 Q55 17 55 22 V50 Q55 54 51 54 H13 Q9 54 9 50 Z" fill="#C8102E" stroke="#FFF4DC" stroke-width="2"/>
+  <!-- Two-pane windshield -->
+  <rect x="13" y="21" width="17.5" height="12" rx="2" fill="#FFF4DC"/>
+  <rect x="33.5" y="21" width="17.5" height="12" rx="2" fill="#FFF4DC"/>
+  <!-- Chrome grille -->
+  <rect x="22" y="37" width="20" height="11" rx="2" fill="#C9CED6" stroke="#1A1423" stroke-width="1.5"/>
+  <path d="M27 38 V47 M32 38 V47 M37 38 V47" stroke="#1A1423" stroke-width="1.5"/>
+  <!-- Headlights -->
+  <circle cx="15.5" cy="42.5" r="4" fill="#FFC93C" stroke="#1A1423" stroke-width="1.5"/>
+  <circle cx="48.5" cy="42.5" r="4" fill="#FFC93C" stroke="#1A1423" stroke-width="1.5"/>
+  <!-- Original chrome starburst ornament -->
+  <path d="M32 31.5 L33.2 34 L35.8 34.4 L33.9 36 L34.4 38.6 L32 37.3 L29.6 38.6 L30.1 36 L28.2 34.4 L30.8 34 Z" fill="#E3E7ED" stroke="#1A1423" stroke-width="0.8"/>
+  <!-- Bumper -->
+  <rect x="9" y="54" width="46" height="4" rx="2" fill="#C9CED6"/>
+</svg>

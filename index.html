@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#14172E" />
+    <meta name="description" content="A jeepney grid-arcade route puzzle: riders hop on, riders hop off, and your jeepney grows and shrinks." />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="./icons/icon.svg" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <title>Sakay-Baba!</title>
+    <script type="module" crossorigin src="/Users/cpd2-l/AppData/Local/Programs/Git/sakay-baba/assets/main-BBVnkj-0.js"></script>
+    <link rel="modulepreload" crossorigin href="/Users/cpd2-l/AppData/Local/Programs/Git/sakay-baba/assets/privacy-content-vB-nq0Hi.js">
+    <link rel="stylesheet" crossorigin href="/Users/cpd2-l/AppData/Local/Programs/Git/sakay-baba/assets/privacy-content-BQNGqn9Z.css">
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="board" role="img" aria-label="Sakay-Baba! game board: a top-down city grid with your jeepney, riders and stop signs"></canvas>
+      <div id="hud" class="hud" hidden>
+        <div id="hud-score" class="hud-sign"></div>
+        <div class="hud-right">
+          <div id="hud-right" class="hud-sign hud-sign--right"></div>
+          <button id="pause-btn" class="pause-btn" type="button" aria-label="Pause">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+          </button>
+        </div>
+      </div>
+      <div id="toast" class="toast" hidden aria-hidden="true"></div>
+      <div id="countdown" class="countdown" hidden aria-hidden="true"></div>
+      <div id="coach" class="coach" hidden></div>
+      <div id="screens"></div>
+      <div id="live" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+      <noscript><p class="noscript">Sakay-Baba! needs JavaScript to run.</p></noscript>
+    </div>
+  </body>
+</html>
